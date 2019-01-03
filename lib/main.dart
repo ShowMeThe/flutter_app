@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/AppConstants.dart' show Constants;
 import 'conversation_page.dart';
+import 'ProgressButton.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -121,8 +122,8 @@ class _BottomNavigationState extends State<BottomNavigationDemo> {
 
     _pagesView = <Widget>[
       ConversationPage(),
-      new Container(
-        color: Colors.black,
+      new Center(
+        child:  ProgressButton(),
       ),
       new Container(
         color: Colors.blueAccent,
